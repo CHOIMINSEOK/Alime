@@ -32,7 +32,7 @@ public class Parsing {
 		}
 */	
 		
-		HWND hwnd = User32.INSTANCE.FindWindow(null, "ÁöÀ½"); // window title
+		HWND hwnd = User32.INSTANCE.FindWindow(null, "¹Ò¼®"); // window title
 		HWND h;
 		if (hwnd == null) {
 			System.out.println("Excel is not running");
