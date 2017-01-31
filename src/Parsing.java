@@ -27,9 +27,12 @@ public class Parsing {
 			//카카오톡 실행
 			Runtime.getRuntime().exec("C:\\Program Files (x86)\\Kakao\\KakaoTalk\\KakaoTalk.exe");
 		}
-		//User32.INSTANCE.SetWindowPos(hKakao,  , 0, 0, 0, 0, 0);
 		
-		
+		//EVA_VH_ListControl-EVA_CustomScrollCtrl 카톡 내 프로필 화면
+		hKakao = User32.INSTANCE.FindWindow(null, "카카오톡");
+
+		User32.INSTANCE.ShowWindow(hKakao, 9 );        // SW_RESTORE
+		User32.INSTANCE.SetForegroundWindow(hKakao);   // bring to front
 		
 		
 		//채팅방 확인
